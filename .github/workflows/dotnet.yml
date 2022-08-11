@@ -32,6 +32,6 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/master'
       with:
         path: docker/orders.NET
-        dockerfile: /docker/Dockerfile
+        dockerfile: /docker/orders.NET/Dockerfile
         registry: docker.io
         image: gunareddy7/orders.NET
